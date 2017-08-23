@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>practice of the div tag</title>
+</head>
+<body>
+<h1 id="a2">hello this is the java script programmming to addition of two numbers</h1>
+enter the first no<input type="text" id="n1"/><br/><br/><br/>
+enter the second no<input type="text" id="n2"/><br/><br/><br/>
+the summestion no is <input type="text" id="sum"/><br/><br/><br/>
+the substraction no is <input type="text" id="sub"/><br/><br/><br/>
+the multiplication no is <input type="text" id="mul"/><br/><br/><br/>
+the division no is <input type="text" id="div"/><br/><br/><br/>
+
+<input type="button" value="sum" onclick="k()"/>
+<input type="button" value="sub"onclick="l()"/>
+<input type="button" value="mul" onclick="m()"/>
+<input type="button" value="div" onclick="n()"/>
+
+
+<script type="text/javascript">
+
+{
+var a=document.getElementById("n1");
+var b=document.getElementById("n2");
+
+
+
+
+function k()
+{
+var sm=parseInt(a.value)+parseInt(b.value);
+var c=document.getElementById("sum");
+c.value=sm;
+
+var z=document.getElementById("a2");
+z.innerHTML=sm;
+}
+
+
+
+function l()
+{
+var sm=parseInt(a.value)-parseInt(b.value);
+var d=document.getElementById("sub");
+d.value=sm;
+
+var z=document.getElementById("a2");
+z.innerHTML=sm;
+
+}
+
+
+
+function m()
+{
+var sm=parseInt(a.value)*parseInt(b.value);
+var e=document.getElementById("mul");
+e.value=sm;
+
+var z=document.getElementById("a2");
+z.innerHTML=sm;
+
+}
+
+
+
+function n()
+{
+var sm=parseInt(a.value)/parseInt(b.value);
+var f=document.getElementById("div");
+f.value=sm;
+
+
+var z=document.getElementById("a2");
+z.innerHTML=sm;
+}
+
+}
+
+</script>
+</body>
+</html>
